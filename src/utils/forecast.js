@@ -11,10 +11,7 @@ const getForecast = (latitude, longitude, callback) => {
         } else if (body.error){
             callback("Unable to find this Address...", undefined)
         } else {
-            callback(undefined, {
-                summary: daily.data[0].summary,
-                currentTemp: apparentTemperature,
-                precipPro: precipProbability
+            callback(undefined, { currentTemp: daily.data[0].summary + " Min Temperature " + daily.data[0].temperatureMin + " and Max Temperature " + daily.data[0].temperatureMax + " It is currently "+apparentTemperature + " Rain Chances  " + precipProbability
             })
         }
     })
