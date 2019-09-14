@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Google</title>   
+        <link rel="icon" href="/img/justpaykro.png">
+        <link rel="stylesheet", href="/css/styles.css">
+    </head>
+
+    <body>
+        <div class="main-container">
+            {{>header}}
+            {{!-- <img class="portrat" src="../img/mithila.jpg"> --}}
+            <form>
+                <input placeholder="Location" style="border: black solid 1px">
+                <button id="searchBtn">Search</button>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+
+</html>
